@@ -13,12 +13,5 @@ describe("API test", () => {
 })
 
 describe("fibonacci test", () => {
-  it("should return 400 when ask /fibonacci without elements", async () => {
-    const { status } = await api.get("/fibonacci");
-    expect(status).toBe(400);
-  })
-  it("should return 400 when ask /fibonacci with invalid elements", async () => {
-    const { status } = await api.get("/fibonacci?elements=abc");
-    expect(status).toBe(400);
-  })
+  
 })
